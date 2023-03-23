@@ -16,6 +16,7 @@
 *.zip
 *.png
 *.npy
+*.xls
 
 # Jupiter Notebook #
 .ipynb_checkpoints
