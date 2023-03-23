@@ -1,0 +1,20 @@
+# OS generated files #
+######################
+.DS_Store
+
+# Photos #
+*.jpg
+*.JPG
+
+# Data #
+.idea
+*.vscode/
+*.gz
+*PKG-INFO
+*.xml
+*.csv
+*.zip
+*.png
+
+# Jupiter Notebook #
+.ipynb_checkpoints
