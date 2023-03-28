@@ -20,7 +20,7 @@ def recadrage(image):
     return area
 
 # Début du programme : Identification du fichier
-liste = [file.lower() for file in os.listdir('photos')]
+liste = [file.lower() for file in os.listdir('data/photos')]
 Fichier = False
 while not Fichier:
     nom = input('Nom personne : ')
@@ -30,7 +30,7 @@ while not Fichier:
         print('')
     else:
         print("Fichier jpg absent pour cette personne")
-nomFichier = 'photos/' + nomFichier
+nomFichier = 'data/photos/' + nomFichier
 
 # Visualisation de l'image
 print("Visualisation de l'image et de ses caractéristiques")
@@ -60,7 +60,7 @@ image1 = area.convert(mode='L')
 image2 = image1.resize((48,48))
 print("Image retraitée")
 print(image2.size)
-plt.imshow(image2)
+plt.imshow(image2, cmap="gray")
 plt.show()
 print('')
 
@@ -69,11 +69,11 @@ img = np.asarray(image2)
 print("Vérification image retraitée")
 print(type(img))
 print(img.shape)
-plt.imshow(img)
+plt.imshow(img, cmap="gray")
 plt.show()
 print('')
 
 # Sauvegarde de l'image mise aux normes
-output = 'photos_normees/' + nom + '_np'
+output = 'data/photos_normees/' + nom + '_np'
 np.save(output, image2)
 print('Photo normalisée sauvegardée')
