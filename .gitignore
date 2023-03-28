@@ -6,6 +6,9 @@
 *.jpg
 *.JPG
 
+# Photos normées #
+*.npy
+
 # Data #
 .idea
 *.vscode/
@@ -15,7 +18,6 @@
 *.csv
 *.zip
 *.png
-*.npy
 
 # Jupiter Notebook #
 .ipynb_checkpoints
